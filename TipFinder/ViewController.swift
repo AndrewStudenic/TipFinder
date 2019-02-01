@@ -19,11 +19,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tipNumber = defaults.integer(forKey: "defaults")
+        print(tipNumber)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaults")
+        
+    }
 
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)

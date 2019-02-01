@@ -14,6 +14,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     var pickerData: [String] = [String]()
     
+    let defaults = UserDefaults.standard
+    
+    
+    
+    
+
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +29,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.picker.delegate = self
         self.picker.dataSource = self
         
+        picker.selectRow(2, inComponent: 0, animated: false)
+        
+        defaults.synchronize()
+        
         pickerData = ["10%", "15%", "20%"]
         // Do any additional setup after loading the view.
     }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -36,6 +49,17 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        defaults.set(pickerView.selectedRow(inComponent: 0), forKey: "defaults")
+        
+        print(pickerView.selectedRow(inComponent: 0))
+        
+    }
+    
+    
+    
+    
     
     
 
