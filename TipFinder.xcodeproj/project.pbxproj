@@ -14,6 +14,7 @@
 		E94546AE21FAC9D100D6D295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94546AC21FAC9D100D6D295 /* LaunchScreen.storyboard */; };
 		E94546B921FAC9D200D6D295 /* TipFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94546B821FAC9D200D6D295 /* TipFinderTests.swift */; };
 		E94546C421FAC9D200D6D295 /* TipFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94546C321FAC9D200D6D295 /* TipFinderUITests.swift */; };
+		E9A17D332203DC1200BED062 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A17D322203DC1200BED062 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E94546BF21FAC9D200D6D295 /* TipFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94546C321FAC9D200D6D295 /* TipFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipFinderUITests.swift; sourceTree = "<group>"; };
 		E94546C521FAC9D200D6D295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A17D322203DC1200BED062 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				E94546A521FAC9D100D6D295 /* ViewController.swift */,
 				E94546A721FAC9D100D6D295 /* Main.storyboard */,
 				E94546AA21FAC9D100D6D295 /* Assets.xcassets */,
+				E9A17D322203DC1200BED062 /* SettingsViewController.swift */,
 				E94546AC21FAC9D100D6D295 /* LaunchScreen.storyboard */,
 				E94546AF21FAC9D100D6D295 /* Info.plist */,
 			);
@@ -258,6 +261,7 @@
 			files = (
 				E94546A621FAC9D100D6D295 /* ViewController.swift in Sources */,
 				E94546A421FAC9D100D6D295 /* AppDelegate.swift in Sources */,
+				E9A17D332203DC1200BED062 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
